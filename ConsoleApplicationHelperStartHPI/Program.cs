@@ -9,13 +9,16 @@ namespace ConsoleApplicationHelperStartHPI
 {
     class Program
     {
+        /*
+         * Generate auto code 
+         */ 
         static void Main(string[] args)
         {
             var enc1251 = Encoding.GetEncoding(1251);
             List<String> specsOut = new List<string>();
             string[] specs = File.ReadAllLines("specs.txt", enc1251);
 
-
+            
 
             string[] strings = File.ReadAllLines("Part.txt", enc1251);
 
